@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Ödev</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/image/logo-1.png" alt="" />
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Demos</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                  >
+                    <option selected>Multipage</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </li>
+                <li>
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                  >
+                    <option selected>One Page</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+      <div class="row">
+        <div class="col-6">
+          <h1 class="baslik mh-5 mt-5">Brand, Design & Development Agency</h1>
+          <p class="lorem fs-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            corrupti vero non voluptas vitae dicta dolor maxime! Eaque nihil
+            deleniti omnis quos. Ducimus accusantium est qui harum velit dolor
+            sunt.
+          </p>
+          <button
+            href="#"
+            type="submit"
+            class="link fs-4 bg-info border-info rounded p-2 mt-2"
+          >
+            Let's Talk Us &gt;
+          </button>
+        </div>
+        <div class="col-6">
+          <img
+            src="assets/image/people.png"
+            class="people rounded-circle m-5"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="assets/image/dog.png"
+            class="people rounded-circle m-5"
+            alt=""
+          />
+        </div>
+        <div class="col-6">
+          <h3 class="text-info">About Us</h3>
+          <h1 class="baslik mh-5 mt-5">We're Creative Agency Since 1993</h1>
+          <h4>Professional Design Agency to provide solutions</h4>
+          <p class="lorem fs-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            corrupti vero non voluptas vitae dicta dolor maxime! Eaque nihil
+            deleniti omnis quos. Ducimus accusantium est qui harum velit dolor
+            sunt.
+          </p>
+          <div class="d-flex align-item-center gap-2 text-primary">
+            <i class="fa-sharp fa-solid fa-circle-check fs-3"></i>
+            <h5>Digital Creative Agency</h5>
+          </div>
+          <div class="d-flex align-item-center gap-2 text-primary">
+            <i class="fa-sharp fa-solid fa-circle-check fs-3"></i>
+            <h5>Professional Problem Solutions</h5>
+          </div>
+          <div class="d-flex align-item-center gap-2 text-primary">
+            <i class="fa-sharp fa-solid fa-circle-check fs-3"></i>
+            <h5>Web Design & Development</h5>
+          </div>
+
+          <button
+            href="#"
+            type="submit"
+            class="btn btn-outline-info fs-4 rounded p-2 mt-3"
+          >
+            Learn More Us &gt;
+          </button>
+        </div>
+      </div>
+      <div class="row d-grid text-center">
+        <h3 class="text-info">Services</h3>
+        <h1>Creative Design Solution</h1>
+        <h5>Professional Design Agency to provide solutions</h5>
+
+        <div class="row m-5">
+          <div class="col-4">
+            <div class="card flex-nowrap" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title text-left">Strategy</h5>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Management</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>MVP Definition</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Strategy</h5>
+                </div>
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card flex-nowrap" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title text-left">Product Design</h5>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Management</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>MVP Definition</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Strategy</h5>
+                </div>
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card flex-nowrap" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title text-left">Development</h5>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Management</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>MVP Definition</h5>
+                </div>
+                <div class="d-flex align-item-center gap-3 fs-4">
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <h5>Product Strategy</h5>
+                </div>
+                <a href="#" class="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="text-info">Latest Work</h3>
+          <h1>Professional Experience</h1>
+          <h5 class="text-info">
+            Professional Design Agency to provide solutions
+          </h5>
+        </div>
+        <div class="row d-flex">
+          <div class="col-2">
+            <div class="card flex-nowrap">
+              <img
+                class="card-img-top"
+                src="assets/image/cat.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dashboard Design</h5>
+                <a href="#" class="text-info">Creative Design</a>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/image/cat2.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard Design</h5>
+                  <a href="#" class="text-info">Creative Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/image/dog.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard Design</h5>
+                  <a href="#" class="text-info">Creative Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/image/papagan.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard Design</h5>
+                  <a href="#" class="text-info">Creative Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/image/dog2.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard Design</h5>
+                  <a href="#" class="text-info">Creative Design</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="assets/image/tavsan.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard Design</h5>
+                  <a href="#" class="text-info">Creative Design</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
