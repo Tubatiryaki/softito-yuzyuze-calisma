@@ -21,14 +21,39 @@
   </head>
   <body>
     <div class="container">
+        <div class="container-fluid">
+         
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+ 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+           <a class="navbar-brand" href="#">
             <img src="assets/image/logo-1.png" alt="" />
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a
@@ -97,14 +122,18 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
           </ul>
         </div>
       </nav>
-      <hr />
-      <div class="row">
-        <div class="col-6">
-          <h1 class="baslik mh-5 mt-5">Brand, Design & Development Agency</h1>
-          <p class="lorem fs-4">
+
+      <hr class="border-5 text-danger" />
+      <div class="row  ">
+        <div class="col-xs-6 col-md-6 ">
+          <h1 class="baslik mt-5 fs-1 ">Brand, Design & Development Agency</h1>
+          <p class="lorem mt-4 fs-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
             corrupti vero non voluptas vitae dicta dolor maxime! Eaque nihil
             deleniti omnis quos. Ducimus accusantium est qui harum velit dolor
@@ -118,27 +147,27 @@
             Let's Talk Us &gt;
           </button>
         </div>
-        <div class="col-6">
+        <div class="col-xs-6 col-md-6">
           <img
             src="assets/image/people.png"
-            class="people rounded-circle m-5"
-            alt=""
+            class="rounded-pill m-5 img-fluid float-right"
           />
         </div>
       </div>
+      <hr class="border-5 text-danger" />
       <div class="row">
-        <div class="col-6">
+        <div class="col-xs-6 col-md-6 ">
           <img
             src="assets/image/dog.png"
-            class="people rounded-circle m-5"
+            class="rounded-pill m-5"
             alt=""
           />
         </div>
-        <div class="col-6">
-          <h3 class="text-info">About Us</h3>
-          <h1 class="baslik mh-5 mt-5">We're Creative Agency Since 1993</h1>
+        <div class="col-xs-6 col-md-6  ">
+          <h3 class="text-info mt-5">About Us</h3>
+          <h1 class="baslik mh-5 mt-5 fs-1">We're Creative Agency Since 1993</h1>
           <h4>Professional Design Agency to provide solutions</h4>
-          <p class="lorem fs-5">
+          <p class="lorem fs-5 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
             corrupti vero non voluptas vitae dicta dolor maxime! Eaque nihil
             deleniti omnis quos. Ducimus accusantium est qui harum velit dolor
@@ -166,17 +195,18 @@
           </button>
         </div>
       </div>
+      <hr class="border-5 text-danger" />
       <div class="row d-grid text-center">
-        <h3 class="text-info">Services</h3>
+        <h3 class="text-info mt-5">Services</h3>
         <h1>Creative Design Solution</h1>
         <h5>Professional Design Agency to provide solutions</h5>
 
         <div class="row m-5">
-          <div class="col-4">
-            <div class="card flex-nowrap" style="width: 18rem">
-              <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="col-xs-6 col-md-4 p-1">
+            <div class="card flex-nowrap pt-3" style="width: 18rem">
+              <a href=""><i class="fa-solid fa-chess-queen fa-5x"></i></a>
               <div class="card-body">
-                <h5 class="card-title text-left">Strategy</h5>
+                <h5 class="card-title text-left text-danger">Strategy</h5>
                 <div class="d-flex align-item-center gap-3 fs-4">
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Management</h5>
@@ -188,16 +218,21 @@
                 <div class="d-flex align-item-center gap-3 fs-4">
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Strategy</h5>
+                  
                 </div>
-                <a href="#" class="">Read More</a>
+                <div>
+                  <a href="#" class=" d-flex flex-row text-danger">Read More</a>
+                </div>
+                
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card flex-nowrap" style="width: 18rem">
-              <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="col-xs-6 col-md-4 p-1">
+            <div class="card flex-nowrap pt-3" style="width: 18rem">
+              <a href=""><i class="fa-solid fa-pen-nib fa-5x"></i></a>
+        
               <div class="card-body">
-                <h5 class="card-title text-left">Product Design</h5>
+                <h5 class="card-title text-left text-danger">Product Design</h5>
                 <div class="d-flex align-item-center gap-3 fs-4">
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Management</h5>
@@ -210,15 +245,15 @@
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Strategy</h5>
                 </div>
-                <a href="#" class="">Read More</a>
+                <a href="#" class="d-flex flex-row text-danger">Read More</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card flex-nowrap" style="width: 18rem">
-              <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="col-xs-6 col-md-4 p-1">
+            <div class="card flex-nowrap pt-3" style="width: 18rem">
+              <a href=""><i class="fa-sharp fa-solid fa-gear fa-5x"></i></a>
               <div class="card-body">
-                <h5 class="card-title text-left">Development</h5>
+                <h5 class="card-title text-left text-danger">Development</h5>
                 <div class="d-flex align-item-center gap-3 fs-4">
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Management</h5>
@@ -231,96 +266,369 @@
                   <i class="fa-solid fa-arrow-right"></i>
                   <h5>Product Strategy</h5>
                 </div>
-                <a href="#" class="">Read More</a>
+                <a href="#" class="d-flex flex-row text-danger">Read More</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <h3 class="text-info">Latest Work</h3>
-          <h1>Professional Experience</h1>
-          <h5 class="text-info">
-            Professional Design Agency to provide solutions
-          </h5>
-        </div>
-        <div class="row d-flex">
-          <div class="col-2">
-            <div class="card flex-nowrap">
-              <img
-                class="card-img-top"
-                src="assets/image/cat.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Dashboard Design</h5>
-                <a href="#" class="text-info">Creative Design</a>
-              </div>
+        <hr class="border-5 text-danger" />
+       
             </div>
-            <div class="col-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="assets/image/cat2.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Dashboard Design</h5>
-                  <a href="#" class="text-info">Creative Design</a>
+            <div class="row  text-center">
+              <h3 class="text-info mt-5">Latest Work</h3>
+              <h1>Professional Experience</h1>
+              <h5 class="text-info">
+                Professional Design Agency to provide solutions
+              </h5>
+            </div>
+            <div class="row m-5">
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/cat.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cat</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/cat2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cat</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/dog2.png" class="card-img-top" alt="assets/image/dog2.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/papagan.png" class="card-img-top" alt="assets/image/dog2.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/tavsan.png" class="card-img-top" alt="assets/image/dog2.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+    
+                <div class="card flex-nowrap pt-3" style="width: 18rem;">
+                  <img src="assets/image/dog3.png" class="card-img-top" alt="assets/image/dog2.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                    <p class="card-text">Creative Design</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>    
+            <hr class="border-5 text-danger" />
+          <div class="row bg-danger text-light d-grid m-5" style="height: 600px;">
+            <div class="col-xs-6 col-md-6 p-4 m-5" >
+              <h3>Let's Work</h3>
+              <h1 class="baslik mt-5 fs-1">Experience & innovative solutions for creative design & development agency</h1>
+              <button class="btn btn-outline-light fs-4 rounded p-2 mt-3">Let's Work Together &gt;</button>
+            </div>
+            <div class="col-xs-6 col-md-6">
+              <img src="assets/image/at.png" alt="" class="rounded-pill position-relative " style="top: -40%; left: 75%;">
+
+            </div>
+          </div>    
+          <div class="row d-grid text-center pt-5">
+            <h3 class="text-info mt-5">Agency Statik</h3>
+            <h1>Why People's Like Us</h1>
+            <h5>Professional Design Agency to provide solutions</h5>
+          </div>
+            <div class="row m-5">
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <a href=""><i class="fa-solid fa-chess-queen fa-5x"></i></a>
+                  <div class="card-body">
+                  <h1>256+</h1>
+                  <h6>Project Complate</h6>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <a href=""><i class="fa-solid fa-pen-nib fa-5x"></i></a>
+            
+                  <div class="card-body">
+                    <h1>783+</h1>
+                    <h6>Project Complate</h6>
+                     
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <a href=""><i class="fa-sharp fa-solid fa-gear fa-5x"></i></a>
+                  <div class="card-body">
+                    <h1>97+</h1>
+                  <h6>Project Complate</h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="assets/image/dog.png"
-                  alt="Card image cap"
-                />
+            <hr class="border-5 text-danger" />
+            <div class="row bg-danger text-light d-grid m-5" style="height: 700px;">
+              
+              <div class="col-xs-6 col-md-4 m-5" >
+                <h3 class="">Testimonials</h3>
+                <h1 class="baslik fs-1">What Our Client's About Us</h1>
+                <h5>Professional Design Agency to provide solutions</h5>
+              </div>
+           
+              <div class="col-xs-6 col-md-4 m-5">
+                <img src="assets/image/people2.png" alt="" class="people rounded-pill position-relative " style="top:-60%; left:150%;">
+  
+              </div>
+            
+         
+
+
+            </div>
+            <hr class="border-5 text-danger" />
+           <div class="row  text-center">
+            <h3 class="text-info mt-5">Meet Our Team</h3>
+            <h1>Experience Team Members</h1>
+            <h5 class="text-info">
+              Professional Design Agency to provide solutions
+            </h5>
+          </div>
+          <div class="row m-5 ">
+            <div class="col-xs-6 col-md-3 p-1 text-center">
+  
+              <div class="card flex-nowrap pt-3 border-0" style="width: 14rem;">
+                <img src="assets/image/cat.png" class="card-img-top rounded-pill" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dashboard Design</h5>
-                  <a href="#" class="text-info">Creative Design</a>
+                  <h5 class="card-title">Douglas J. Bleau</h5>
+                  <p class="card-text">UX/UI Designer</p>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="assets/image/papagan.png"
-                  alt="Card image cap"
-                />
+            <div class="col-xs-6 col-md-3 p-1 text-center">
+  
+              <div class="card flex-nowrap pt-3 border-0" style="width: 14rem;">
+                <img src="assets/image/cat2.png" class="card-img-top rounded-pill" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dashboard Design</h5>
-                  <a href="#" class="text-info">Creative Design</a>
+                  <h5 class="card-title">Thomas M. Wilso</h5>
+                  <p class="card-text">Web Developer</p>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="assets/image/dog2.png"
-                  alt="Card image cap"
-                />
+            <div class="col-xs-6 col-md-3 p-1 text-center">
+  
+              <div class="card flex-nowrap pt-3 border-0" style="width: 14rem;">
+                <img src="assets/image/dog2.png" class="card-img-top rounded-pill" alt="assets/image/dog2.png">
                 <div class="card-body">
-                  <h5 class="card-title">Dashboard Design</h5>
-                  <a href="#" class="text-info">Creative Design</a>
+                  <h5 class="card-title">Robert J. Ryan</h5>
+                  <p class="card-text">SEO Marketing</p>
+                  
                 </div>
               </div>
             </div>
-            <div class="col-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="assets/image/tavsan.png"
-                  alt="Card image cap"
-                />
+            <div class="col-xs-6 col-md-3 p-1 text-center">
+  
+              <div class="card flex-nowrap pt-3 border-0" style="width: 14rem;">
+                <img src="assets/image/dog3.png" class="card-img-top rounded-pill" alt="assets/image/dog2.png">
                 <div class="card-body">
-                  <h5 class="card-title">Dashboard Design</h5>
-                  <a href="#" class="text-info">Creative Design</a>
+                  <h5 class="card-title">Kenneth K. Joiner</h5>
+                  <p class="card-text">UX/UI Designer</p>
+                  
                 </div>
               </div>
             </div>
+            <div class="col-xs-6 col-md-4 p-1">
+                  
+                </div>
+              </div>
+              <hr class="border-5 text-danger" />
+            <div class="row m-5">
+              <div class="col-xs-8 col-md-6">
+                <h1>Have Any on Project Mind! Contact Us</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudan tium, totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem</p>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col"><i class="fa-solid fa-envelope text-info"></i>&nbsp;Email Us</th>
+                      <th scope="col"><i class="fa-solid fa-phone text-info"></i>&nbsp;Phone Us</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><a href="mailto:support@gmail.com"> support@gmail.com</a></th>
+                      <td><a href="tel:+012 (345) 67 89">+012 (345) 67 89</a></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"><input type="text" placeholder="Full Name"></th>
+                      <td><input type="email" placeholder="Email Adress"></td>
+                     
+                    </tr>
+                  
+                  </tbody>
+                </table>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Message"></textarea>
+                </div>
+                <button class="btn btn-outline-info fs-4 rounded p-2 mt-3">Send Us Message &gt;</button>
+              </div>
+              <div class="col-xs-4 col-md-6">
+                <img src="assets/image/people.png" class="rounded-pill mt-5 relative float-right" style=" left: -100%;">
+              </div>
+            </div> 
+            <hr class="border-5 text-danger" />
+            <div class="row d-grid text-center">
+              <h3 class="text-info mt-5">Articles Nevs</h3>
+              <h1>Latest News & Blogs</h1>
+              <h5>Professional Design Agency to provide solutions</h5>
+              </div>
+            
+            <div class="row m-5">
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <button class="btn btn-outline-info">Design</button>
+                  <div class="card-body">
+                    <h5 class="card-title text-left text-danger">Everything You Want To Know About</h5>
+                    <p>Sit amet consectete adipising elit wedo eiusmod temeidiunt laboret dolore magna ways</p>
+                  
+                    <div>
+                      <a href="#" class=" d-flex flex-row text-danger">Read More</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <button class="btn btn-outline-info">Design</button>
+                  <div class="card-body">
+                    <h5 class="card-title text-left text-danger">Designing Better Links For Websites And Emails</h5>
+                    <p>Sit amet consectete adipising elit wedo eiusmod temeidiunt laboret dolore magna ways</p>
+                  
+                    <div>
+                      <a href="#" class=" d-flex flex-row text-danger">Read More</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-4 p-1">
+                <div class="card flex-nowrap pt-3" style="width: 18rem">
+                  <button class="btn btn-outline-info">Design</button>
+                  <div class="card-body">
+                    <h5 class="card-title text-left text-danger">Everything You Want To Know About</h5>
+                    <p>Sit amet consectete adipising elit wedo eiusmod temeidiunt laboret dolore magna ways</p>
+                  
+                    <div>
+                      <a href="#" class=" d-flex flex-row text-danger">Read More</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-info mt-5 ">View More News &gt;</button>
+            </div> 
+            <hr class="border-5 text-danger" />
+            <div class="row mt-5">
+              <div class="col-6">
+                <img src="assets/image/logo-1.png " class="img-fluid ">
+              </div>
+              <div class="col-6">
+                <h1>Modern Solutionsd For Creative Agency</h1>
+              </div>
+            </div>
+            <hr class="border-5 text-danger" />
+            <div class="row mt-5 ">
+              <div class="col-3 ">
+                <div class="list-group ">
+                  <a href="#" class="list-group-item list-group-item-action active fs-5 form-control">
+                    Services
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">DUX/UI Design</a>
+                  <a href="#" class="list-group-item list-group-item-action">Web Development</a>
+                  <a href="#" class="list-group-item list-group-item-action">SEO Optimization</a>
+                  <a href="#" class="list-group-item list-group-item-action">Product Design</a>
+                  <a href="#" class="list-group-item list-group-item-action">Logo Design</a>
+                  <a href="#" class="list-group-item list-group-item-action">Brand Design</a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    Links
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">About Agency</a>
+                  <a href="#" class="list-group-item list-group-item-action">Latest News & Blog</a>
+                  <a href="#" class="list-group-item list-group-item-action">Meet The Team</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Popular Services</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Testimonials</a>
+                  <a href="#" class="list-group-item list-group-item-action disabled">Need a Career?</a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    Follow
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">Dribbble</a>
+                  <a href="#" class="list-group-item list-group-item-action">Instagram</a>
+                  <a href="#" class="list-group-item list-group-item-action">Twitter</a>
+                  <a href="#" class="list-group-item list-group-item-action ">Behance</a>
+                  <a href="#" class="list-group-item list-group-item-action ">Facebook</a>
+                  <a href="#" class="list-group-item list-group-item-action ">Medium</a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    Subscribe Our Newsletter
+                  </a>
+                  <p>Natus errorsit voluptatem accusa dolore mque quae abillo inventore verita achitec beatae vitae dicta sunt explicabo.</p>
+                  <input type="email" placeholder="Email Address">
+                  <button class="btn btn-outline-info mt-5 ">Sign Up</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            </div>
+          </div>  
+          
           </div>
         </div>
       </div>
