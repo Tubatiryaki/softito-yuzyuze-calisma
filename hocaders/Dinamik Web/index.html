@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Add Component</h3>
+            </div>
+            <div class="card-body">
+              <!-- Component Secme -->
+              <label>Select Component</label>
+              <select class="form-control" onchange="select()" id="component">
+                <option value="Button">Button</option>
+                <option value="Div">Div</option>
+                <option value="Link">Link</option>
+                <option value="Paragraf">Paragraf</option>
+                <option value="Header">Header</option>
+                <option value="Image">Image</option>
+              </select>
+
+              <!-- Component Id Secme -->
+              <label>Select Component Id</label>
+              <select class="form-control" id="componentId"></select>
+            </div>
+            <!-- Id seçem -->
+            <div class="card-body">
+              <label for="addId">Id</label>
+              <input
+                type="text"
+                name=""
+                id="addId"
+                placeholder="Add Id"
+                class="form-control mb-3"
+              />
+              <!-- Class ekleme -->
+              <label for="addClass">Class</label>
+              <input
+                type="text"
+                name=""
+                id="addClass"
+                placeholder="Add Class"
+                class="form-control mb-3"
+              />
+              <!-- Renk Seçme -->
+              <label for="Color">Color</label>
+              <select class="form-control mb-3" id="Color">
+                <option value="danger">Danger</option>
+                <option value="warning">Warning</option>
+                <option value="primary">Primary</option>
+                <option value="success">Success</option>
+                <option value="dark">Dark</option>
+                <option value="secondary">Secondary</option>
+                <option value="info">İnfo</option>
+                <option value="light">Light</option>
+              </select>
+              <!-- Text ekleme -->
+              <label for="addText">Text</label>
+              <input
+                type="text"
+                name=""
+                id="addText"
+                placeholder="Add Text"
+                class="form-control mb-3"
+              />
+              <!-- Yazı rengi secme -->
+              <label for="textColor">Text Color</label>
+              <select class="form-control mb-3" id="textColor">
+                <option value="danger">Danger</option>
+                <option value="warning">Warning</option>
+                <option value="primary">Primary</option>
+                <option value="success">Success</option>
+                <option value="dark">Dark</option>
+                <option value="secondary">Secondary</option>
+                <option value="info">İnfo</option>
+                <option value="light">Light</option>
+              </select>
+
+              <!-- Header Büyüklüğü Ekleme -->
+              <label for="headerSize">Header Size</label>
+              <select name="" id="headerSize" class="form-control mb-3">
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="h4">h4</option>
+                <option value="h5">h5</option>
+                <option value="h6">h6</option>
+              </select>
+
+              <label for="image">İmage</label>
+             
+              <input type="text" class="form-control mb-3" id="image">
+
+
+              <!-- Button büyüklüğü secme -->
+              <label for="btnSize">Button Size</label>
+                <select class="form-control mb-3" id="btnSize">
+                  <option >Regular</option>
+                  <option value="btn-sm">Small</option>
+                  <option value="btn-lg">Large</option>
+                </select>
+
+               <!-- <a href="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80">merhaba</a> -->
+           
+               <!-- Link Ekeleme -->
+               <label for="addlink" class="form-control">Link</label>
+               <input
+                 type="link"
+                 placeholder="Link"
+                 id="addLink"
+                 class="form-control mb-3"
+               />
+            </div>
+            <!-- footer -->
+            <div class="card-footer">
+              <button
+                class="btn btn-success form-control"
+                onclick="addComponent()"
+              >
+                Add Companent
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-8" id="content"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
